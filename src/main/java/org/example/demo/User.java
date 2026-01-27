@@ -1,6 +1,5 @@
 package org.example.demo;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -9,9 +8,11 @@ import jakarta.persistence.Table;
 @Table(name = "whatever")
 public class User {
     @Id
-    private final Integer id;
+    private Integer id;
 
-    private final String name;
+    private String name;
+
+    public User() { }
 
     public User(int id, String name) {
         this.id = id;

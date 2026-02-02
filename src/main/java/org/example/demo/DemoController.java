@@ -44,7 +44,7 @@ public class DemoController {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/demo").allowedOrigins("https://demo-iwmn.onrender.com");
+                registry.addMapping("/**");
             }
         };
     }

@@ -25,7 +25,7 @@ public class DemoController {
 
         for (User user : users)
         {
-            UserDTO userDTO = new UserDTO(user.getId(), user.getName());
+            UserDTO userDTO = new UserDTO(user.getName());
             userDTOS.add(userDTO);
         }
 

@@ -34,7 +34,8 @@ public class DemoController {
 
     @PostMapping
     public void createUser(@RequestBody UserDTO userDTO) {
-        User user = new User(userDTO.name());
+        User user = new User();
+        user.setName(userDTO.name());
 
         repository.save(user);
     }
